@@ -16,7 +16,7 @@ public class uppgift6 {
 	             System.out.print(" ");
 	         }
 	        for(int k=0;k<=i;k++) {
-	            System.out.print("x ");
+	            System.out.print("X ");
 	        }
 	        System.out.println();  
 	        input.close();
