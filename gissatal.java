@@ -4,9 +4,14 @@ import java.util.Scanner;
 
 public class gissaTal {
 	public static void main(String args[]) {
+		boolean omstart = true;
+		while (omstart) { // en while loop för om man vill spela igen
+			
+		
 		int max = 0;
 		int min = 0;
 		int guess = 0, count = 0, countMax = 0;
+		String börja;
 		System.out.println(
 				"Välj en nivå \n \nNivå 1: lätt. Du har 10 gissningar, maxtal 50 \nNivå 2: mellan. du har 10 gissnigar, maxtal är 100 \nNivå 3: Svår. du har 16 gissningar, maxtal är 200");
 		// Här har jag skrivit så att man kan veta vad man har för nivå, hur många
@@ -64,6 +69,15 @@ public class gissaTal {
 		if (guess == a) {
 			System.out.println("Rätt, bra jobbat!. Du gissade med " + count + " försök!");
 		}
+		System.out.println("\n");
+        System.out.println("Vill du spela igen? \nSvara 'nej' om du inte vill starta om. Skriv 'ja' om du vill starta om.");
+        input.nextLine(); // detta finns för att kunna skriva ja eller nej för att starta om
+        börja = input.nextLine();
+        if (börja.equals("nej")) { // om man skriver nej då startas det inte om
+            omstart = false;
+            System.out.println("Tack för spelandet!");
+        }
 	}
-
+	}
 }
+	
