@@ -36,7 +36,7 @@ public class hangman2 {
 
 		if (asterisk.equals(newasterisk)) {
 			count++;
-			
+			hangmanbild();
 		} else {
 			asterisk = newasterisk;
 		}
@@ -45,4 +45,87 @@ public class hangman2 {
 		}
 	}
 
+	public static void hangmanbild() {
+		if (count == 1) { // om man får fel 1 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println("___|___");
+			System.out.println();
+		}
+		if (count == 2) { // om man får fel 2 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (count == 3) { // om man får fel 3 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println("   ____________");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   | ");
+			System.out.println("___|___");
+		}
+		if (count == 4) { // om man får fel 4 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (count == 5) { // om man får fel 5 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |           |");
+			System.out.println("   |           |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (count == 6) { // om man får fel 6 gång
+			System.out.println("Wrong guess, try again");
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |           |");
+			System.out.println("   |           |");
+			System.out.println("   |          / \\ ");
+			System.out.println("___|___      /   \\");
+		}
+		if (count == 7) { // om man får fel 7 gång
+			System.out.println("GAME OVER!");
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |          _|_");
+			System.out.println("   |         / | \\");
+			System.out.println("   |          / \\ ");
+			System.out.println("___|___      /   \\");
+			System.out.println("GAME OVER! The word was " + word);
+		}
+	}
 }
